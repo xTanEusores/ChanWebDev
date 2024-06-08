@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Dish Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom-styles.css"> </link>
+</head>
+<body>
+    <h1 id="title" class="display-4 text-center">Filipino Dish Survey Form</h1>
+    <p id="description" class="text-center font-weight-light">Favorite Filipino dish you love to eat</p>
+    <div class="container my-5">
+        <div class="my-container mx-auto col-md-6">
+            <form id="survey-form">
+                <div class="form-group mb-3">
+                    <label id="name-label" class="form-label">Name:</label>
+                    <input id="name" placeholder="Enter Full Name" class="form-control" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label id="email-label" class="form-label">Email:</label>
+                    <input id="email" type="email" placeholder="Enter email address" class="form-control" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label id="number-label" class="form-label">Age:</label>
+                    <input id="number" type="number" min="10" max="80" placeholder="Age" class="form-control" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label id="age-label" class="form-label">Gender:</label>
+                    <select id="dropdown" class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">Do you love our Filipino dishes?</label>
+                    <div class="form-check">
+                        <input type="radio" name="love" value="Super yes" class="form-check-input" id="super-yes">
+                        <label class="form-check-label" for="super-yes">Super Yes!</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="love" value="yes" class="form-check-input" id="yes">
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="love" value="no" class="form-check-input" id="no">
+                        <label class="form-check-label" for="no">No!</label>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">Which of these dishes do you like the most?</label>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Adobo" class="form-check-input" id="adobo">
+                        <label class="form-check-label" for="adobo">Adobo</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Kaldereta" class="form-check-input" id="kaldereta">
+                        <label class="form-check-label" for="kaldereta">Kaldereta</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Dinuguan" class="form-check-input" id="dinuguan">
+                        <label class="form-check-label" for="dinuguan">Dinuguan</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Pinakbet" class="form-check-input" id="pinakbet">
+                        <label class="form-check-label" for="pinakbet">Pinakbet</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Torta" class="form-check-input" id="torta">
+                        <label class="form-check-label" for="torta">Torta</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="dishes" value="Lechon" class="form-check-input" id="lechon">
+                        <label class="form-check-label" for="lechon">Lechon</label>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">Any dish you want to taste next time</label>
+                    <textarea class="form-control" placeholder="We will Serve it for you next time :)"></textarea>
+                  </div>
+                  <div class="form-group  mb-3">
+                    <input type="submit" id="submit"  class="form-control">
+                  </div>
+              
+              </form>
+              
+              
+              </div>
+              </body>
+              </html>

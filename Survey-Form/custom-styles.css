@@ -1,0 +1,43 @@
+body {
+    background: url('https://www.seriouseats.com/thmb/aYkk0_Uj2NdKRspDfKbGPDuHNUo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Filipino-Features-Hero-Final-2-b785e627967843b0aa631c6a977adabe.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff; /* White color for text */
+}
+.my-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    padding: 20px; /* Increased padding for more space inside the container */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+h1, p, label, .form-check-label {
+    color: white;
+}
+h1 {
+    margin-bottom: 20px; /* More space below the title */
+    letter-spacing: 1px; /* Increased spacing between letters */
+}
+p {
+    margin-bottom: 30px; /* More space below the description */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+.form-group {
+    margin-bottom: 25px; /* More space between form groups */
+}
+.form-check {
+    margin-bottom: 10px; /* More space between form-check elements */
+}
+textarea, input[type="submit"] {
+    margin-top: 20px; /* More space above the textarea and submit button */
+}
+@media (max-width: 576px) {
+    .my-container {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+}
+#title {
+  color: #d3d3d3 /* Golden color for the title */
+}
+
+#description {
+color: #a9a9a9; /* Light gray color for the description */
+}
