@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Tailwind CSS Documentation</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <!-- Navigation bar with links to different sections of the documentation -->
+        <nav id="navbar">
+            <!-- Header section containing the main title -->
+            <header>
+                <h1>Tailwind CSS Documentation</h1>
+            </header>
+            <ul>
+                <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#installation" class="nav-link">Installation</a></li>
+                <li><a href="#usage" class="nav-link">Usage</a></li>
+                <li><a href="#api" class="nav-link">API</a></li>
+                <li><a href="#examples" class="nav-link">Examples</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+        <!-- Main content of the documentation -->
+        <main id="main-doc">
+            <!-- Introduction section -->
+            <section class="main-section" id="introduction">
+                <header><h2>Introduction</h2></header>
+                <p>Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is highly customizable and provides all the building blocks needed to create bespoke designs without any opinionated styles to override.</p>
+                <p></p>
+                <p></p>
+                <!-- Fulfilling fcc requirements -->
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </section>
+            <!-- Installation section -->
+            <section class="main-section" id="installation">
+                <header><h2>Installation</h2></header>
+                <p>To install Tailwind CSS, follow these steps:</p>
+                <pre><code>npm install tailwindcss</code></pre>
+                <p>Then create your <code>tailwind.config.js</code> file:</p>
+                <pre><code>npx tailwindcss init</code></pre>
+            </section>
+            <!-- Usage section -->
+            <section class="main-section" id="usage">
+                <header><h2>Usage</h2></header>
+                <p>Here's how to use Tailwind CSS in your project:</p>
+                <pre><code>
+/* Add the Tailwind directives to your CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+                </code></pre>
+                <p>Then you can start using Tailwind's utility classes in your HTML:</p>
+                <pre><code>
+&lt;h1 class="text-3xl font-bold underline"&gt;
+  Hello world!
+&lt;/h1&gt;
+                </code></pre>
+            </section>
+            <!-- API section -->
+            <section class="main-section" id="api">
+                <header><h2>API</h2></header>
+                <p>The Tailwind CSS API provides various configuration options. You can customize the default theme, extend the default utility classes, and configure plugins. The configuration file is a JavaScript file where you define your customizations:</p>
+                <pre><code>
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'custom-blue': '#1fb6ff',
+        'custom-pink': '#ff49db',
+      }
+    }
+  }
+}
+                </code></pre>
+            </section>
+            <!-- Examples section -->
+            <section class="main-section" id="examples">
+                <header><h2>Examples</h2></header>
+                <p>Here are some examples of how to use Tailwind CSS:</p>
+                <pre><code>
+// Example 1: Button
+&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
+  Button
+&lt;/button&gt;
+
+// Example 2: Card
+&lt;div class="max-w-sm rounded overflow-hidden shadow-lg"&gt;
+  &lt;img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"&gt;
+  &lt;div class="px-6 py-4"&gt;
+    &lt;div class="font-bold text-xl mb-2"&gt;The Coldest Sunset&lt;/div&gt;
+    &lt;p class="text-gray-700 text-base"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </section>
+            <!-- FAQ section -->
+            <section class="main-section" id="faq">
+                <header><h2>FAQ</h2></header>
+                <p>Frequently Asked Questions:</p>
+
+                <ul>
+                    <li><strong>Question 1:</strong> How do I install Tailwind CSS?</li>
+                    <li><strong>Answer:</strong> Use the command <code>npm install tailwindcss</code>.</li>
+                    <li><strong>Question 2:</strong> How do I customize Tailwind CSS?</li>
+                    <li><strong>Answer:</strong> Edit the <code>tailwind.config.js</code> file to customize the default theme and add custom utilities.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
