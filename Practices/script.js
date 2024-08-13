@@ -40,7 +40,7 @@ const singingArrow1 = (callback) => {
 // called singing regular function using regular function dance regular function as an argument
 singing(dance)
 
-// called singing Regular arrow function using arrow function dance as an argument
+// called singing Regular arrow function using regular arrow function dance as an argument
 singingArrow1(danceArrow1)
 
 //
